@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" onMouseClicked="#shot" prefHeight="768.0" prefWidth="1360.0" styleClass="anchor" stylesheets="@style-graphic.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pong.view.Controller">
+   <children>
+      <Line fx:id="dash" endX="670.0" endY="768.0" smooth="false" startX="670.0" stroke="WHITE" strokeDashOffset="20.0" strokeWidth="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" stroke="WHITE" strokeType="INSIDE" width="1360.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutY="718.0" stroke="WHITE" strokeType="INSIDE" width="1360.0">
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect></Rectangle>
+      <Label fx:id="ball" layoutX="1225.0" layoutY="350.0" prefHeight="80.0" prefWidth="80.0" styleClass="label-ball" />
+      <Label fx:id="leftRacket" layoutX="10.0" layoutY="290.0" prefHeight="200.0" prefWidth="45.0" styleClass="label-left-racket">
+         <effect>
+            <DropShadow color="#b7cd15" />
+         </effect></Label>
+      <Label fx:id="rightRacket" layoutX="1305.0" layoutY="290.0" prefHeight="200.0" prefWidth="45.0" styleClass="label-right-racket">
+         <effect>
+            <DropShadow color="#17d717" />
+         </effect></Label>
+      <Label layoutX="520.0" prefHeight="169.0" prefWidth="300.0" styleClass="label-scorebord" />
+      <Label fx:id="watch" layoutX="605.0" layoutY="8.0" styleClass="label-timer" text="00:00" />
+      <Label fx:id="leftScore" layoutX="548.0" layoutY="72.0" styleClass="label-score" text="00" />
+      <Label layoutX="565.0" layoutY="143.0" styleClass="label-names" text="Server" textAlignment="CENTER" />
+      <Label fx:id="rightScore" layoutX="708.0" layoutY="72.0" styleClass="label-score" text="00" />
+      <Label layoutX="728.0" layoutY="143.0" styleClass="label-names" text="Client" textAlignment="CENTER" />
+      <AnchorPane fx:id="settingPane" layoutX="525.0" layoutY="180.0" prefHeight="289.0" prefWidth="291.0" style="-fx-background-color: #494949;" visible="false">
+         <children>
+            <Button layoutX="42.0" layoutY="221.0" onAction="#exit" prefHeight="35.0" prefWidth="100.0" text="Exit" />
+            <Button layoutX="149.0" layoutY="221.0" onAction="#minimize" prefHeight="35.0" prefWidth="100.0" text="Minimize" />
+            <Slider fx:id="speedMetter" layoutX="75.0" layoutY="42.0" max="10.0" value="5.0" />
+            <Label layoutX="124.0" layoutY="8.0" styleClass="label-names" text="Level:" />
+            <Label layoutX="97.0" layoutY="69.0" styleClass="label-names" text="Goal Score:" />
+            <TextField fx:id="goalField" layoutX="35.0" layoutY="100.0" text="15" />
+            <Button layoutX="42.0" layoutY="174.0" onAction="#apply" prefHeight="35.0" prefWidth="100.0" text="Apply" />
+            <Button layoutX="149.0" layoutY="174.0" onAction="#close" prefHeight="35.0" prefWidth="100.0" text="Close" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane fx:id="congratulationPane" layoutX="525.0" layoutY="342.0" prefHeight="160.0" prefWidth="314.0" style="-fx-background-color: #494949;" visible="false">
+         <children>
+            <Label fx:id="congratulationLabel" layoutX="40.0" layoutY="30.0" styleClass="label-names" text="Congratulation" textAlignment="CENTER">
+               <effect>
+                  <DropShadow color="#1ef84a" />
+               </effect>
+            </Label>
+            <Button layoutX="77.0" layoutY="97.0" onAction="#restart" prefWidth="80.0" text="Restart" />
+            <Button layoutX="168.0" layoutY="97.0" onAction="#exit" prefWidth="80.0" text="Exit" />
+         </children>
+         <effect>
+            <DropShadow color="#21c90e" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="NONE" />
+   </cursor>
+</AnchorPane>

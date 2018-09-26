@@ -1,0 +1,46 @@
+.anchor {
+	-fx-background-image: url(Background.png);
+}
+.label-ball {
+	-fx-background-image: url(ball.png);
+}
+.label-scorebord {
+	-fx-background-image: url(scorebord.png);
+}
+.label-right-racket {
+	-fx-background-image: url(right-racket.png);
+}
+.label-left-racket {
+	-fx-background-image: url(left-racket.png);
+}
+.label-score {
+	-fx-text-fill: #b11616;
+}
+.label-timer {
+	-fx-text-fill: #f1cd16;
+}
+.label-names {
+	-fx-font-size: 18;
+	-fx-text-fill: white;
+}
+.button {
+	-fx-font-size: 18;
+	-fx-text-fill: white;
+	-fx-background-color: darkgray;
+}
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.text-field{
+    -fx-font-size: 18.0;
+    -fx-text-fill: #ffff;
+    -fx-background-color: #494949;
+    -fx-border-color: white;
+}
+.slider .thumb{
+	-fx-background-color: darkgray ;
+}
+.slider{
+	-fx-background-color: transparent;
+}

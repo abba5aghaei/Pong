@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="331.0" prefWidth="300.0" styleClass="anchor" stylesheets="@style-dialog.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pong.view.StartDialog">
+   <children>
+      <ToggleButton fx:id="type" layoutX="216.0" layoutY="75.0" mnemonicParsing="false" onAction="#networkHandller" prefWidth="70.0" selected="true" text="شبکه" AnchorPane.rightAnchor="30.0" />
+      <Label fx:id="ip_label" layoutX="230.0" layoutY="135.0" text="آدرس IP:" AnchorPane.rightAnchor="30.0" />
+      <Label fx:id="port_label" layoutX="250.0" layoutY="176.0" text="پورت:" AnchorPane.rightAnchor="30.0" />
+      <TextField fx:id="IP" layoutX="40.0" layoutY="126.0" maxWidth="170.0" text="127.0.0.1" />
+      <TextField fx:id="PORT" layoutX="40.0" layoutY="169.0" maxWidth="170.0" text="5000" />
+      <RadioButton fx:id="server_radio" layoutX="40.0" layoutY="220.0" mnemonicParsing="false" selected="true" text="سرور" />
+      <RadioButton fx:id="client_radio" layoutX="140.0" layoutY="220.0" mnemonicParsing="false" text="کلاینت" />
+      <Button fx:id="start_button" layoutX="40.0" layoutY="270.0" mnemonicParsing="false" onAction="#startGame" prefWidth="80.0" text="شروع" />
+      <Button layoutX="130.0" layoutY="270.0" mnemonicParsing="false" onAction="#cancel" prefWidth="80.0" text="انصراف" />
+      <Label fx:id="waitLabel" layoutX="109.0" layoutY="72.0" text="در حال انتظار..." visible="false" />
+      <ProgressIndicator fx:id="waiter" layoutX="124.0" layoutY="14.0" visible="false" />
+   </children>
+</AnchorPane>

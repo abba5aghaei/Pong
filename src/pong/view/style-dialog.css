@@ -1,0 +1,43 @@
+.anchor{
+    -fx-background-color: #212121;
+}
+@font-face {
+    src: url("AdobeArabic-Regular.otf");
+}
+.text-field {
+    -fx-font-size: 14;
+    -fx-font-family: "Adobe Arabic";
+    -fx-background-color: #212121;
+    -fx-text-fill: #ffff;
+    -fx-border-color: white;
+}
+.button {
+    -fx-font-size: 14;
+    -fx-font-family: "Adobe Arabic";
+    -fx-background-color: #434343;
+    -fx-text-fill: #ffff;
+}
+.toggle-button {
+    -fx-font-size: 14;
+    -fx-font-family: "Adobe Arabic";
+    -fx-background-color: #323232;
+    -fx-text-fill: #ffff;
+    -fx-border-color: #545454;
+}
+.toggle-button:selected {
+    -fx-font-size: 14;
+    -fx-font-family: "Adobe Arabic";
+    -fx-background-color: #545454;
+    -fx-text-fill: #ffff;
+    -fx-border-color: #545454;
+}
+.label{
+    -fx-font-size: 14;
+    -fx-font-family: "Adobe Arabic";
+    -fx-text-fill: #ffff;
+}
+.radio-button {
+    -fx-font-size: 14;
+    -fx-font-family: "Adobe Arabic";
+    -fx-text-fill: #ffff;
+}
