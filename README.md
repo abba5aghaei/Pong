@@ -1,4 +1,8 @@
 # Pong
-Java-javafx Game
 
-Two-player game under the network
+Two-player pong game under the network
+
+# Screenshot
+![Pong](Screenshot.png?raw=true "Pong")
+
+improve it if you can!
